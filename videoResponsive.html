@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Responsive</title>
+    <link rel="stylesheet" src="https://normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <style>
+        .contenedorVideo {
+            height: 0;
+            overflow: hidden;
+            padding: 30px 0 56.25%; /*El padding bottom es el resultado de una regla de 3 en base a 16/9*/
+            position: relative;
+        }
+        .contenedorVideo iframe,
+        .contenedorVideo object,
+        .contenedorVideo video {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Creación de un vídeo responsive</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, officia illo ipsa ea aliquid veniam quae ex. Sit, voluptates ipsa odit perspiciatis iusto. Quod, cum, consequatur dolorum corporis ipsa illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, iure, adipisci, pariatur quod doloremque mollitia nesciunt dolorum nihil totam sint veniam consequatur ab soluta maiores cumque ea quae in. Ea?
+        </p>
+        <div class="contenedorVideo">
+            <iframe src="http://www.youtube.com/embed/6acRHWnfZAE" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+</html>
